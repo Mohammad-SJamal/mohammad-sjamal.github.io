@@ -126,12 +126,12 @@ div.slide-right img {
 /* Styles for p4*/
 
 .box {
-    width: 400px;
-    height: 400px;
+    width: 40vh;
+    height: 40vh;
     background-color: rgba(211, 211, 211, 0.256);
 }
 
 .box:hover {
-    width: 500px;
-    height: 500px;
+    width: 50vh;
+    height: 50vh;
 }
