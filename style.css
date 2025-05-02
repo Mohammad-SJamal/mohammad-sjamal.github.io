@@ -1,11 +1,51 @@
 * {
-    background-color: black;
-    color: rgb(228, 227, 213);
-    font-family: 'Times New Roman', Times, serif;
+    /* color: black;
+    background-color: rgb(228, 227, 213); */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    scroll-behavior: smooth;
     
 }
 
+body {
+    margin: 0;
+}
+
+ul, h1, h2 {
+    margin: 0;
+}
+
+#page{
+    height: 100vh;
+}
+
+.p1 {
+    color: black;
+    background-color: bisque;
+}
+
+.p2 {
+    background-color: azure;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.p3 {
+    background-color: pink;
+}
+
+.p4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color:plum;
+}
+
+/*These are the styles for p1 home div!*/
+
 .nav-links {
+    height: 40px;
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -20,5 +60,75 @@
 
 .nav-item:hover{
     background-color: white;
-    color: black;
+    
+}
+
+
+div.slide-right {
+    width:100%;
+    overflow:hidden;
+}
+
+div.slide-right h1 {
+    animation: 3s slide-right forwards;
+    font-size: 12vh;
+}
+
+div.slide-right h2 {
+    animation: 4s slide-right forwards;
+    font-size: 5vh;
+}
+
+div.slide-right img {
+    animation: 5s slide-right-arrow forwards;
+}
+  
+@keyframes slide-right {
+    from {
+        margin-left: -100%;
+    }
+  
+    to {
+      margin-left: 8px;
+    }
+}
+
+@keyframes slide-right-arrow {
+    from {
+        margin-left: -100%;
+    }
+  
+    to {
+      margin-left: 35%;
+    }
+}
+
+/*These are the styles for p2 bio div!*/
+
+.bio {
+    background-color: rgb(169, 221, 234);
+    border-radius: 15px;
+    width: 40%;
+    font-size: larger;
+    
+
+}
+
+.p2 img {
+    border-style: solid;
+    border-radius: 100px;
+    border-color: rgb(169, 221, 234);
+}
+
+/* Styles for p4*/
+
+.box {
+    width: 400px;
+    height: 400px;
+    background-color: rgba(211, 211, 211, 0.256);
+}
+
+.box:hover {
+    width: 500px;
+    height: 500px;
 }
